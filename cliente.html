@@ -1,0 +1,83 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turnos QR</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    padding:20px;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+h1{
+    color:#003366;
+}
+
+.turno{
+    font-size:40px;
+    font-weight:bold;
+    color:#003366;
+}
+
+.espera{
+    font-size:24px;
+    color:#555;
+}
+
+.proximo{
+    font-size:24px;
+    color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1 id="nombre">Cargando...</h1>
+
+    <p>Atendiendo</p>
+    <div class="turno" id="actual">...</div>
+
+    <br>
+
+    <div class="espera">
+        Personas en espera:
+        <span id="espera">...</span>
+    </div>
+
+    <br>
+
+    <div class="proximo">
+        Próximo número:
+        <span id="siguiente">...</span>
+    </div>
+</div>
+
+<script>
+
+document.getElementById("nombre").textContent = "Notaria Centro";
+document.getElementById("actual").textContent = "A-001";
+document.getElementById("espera").textContent = "5";
+document.getElementById("siguiente").textContent = "A-002";
+
+</script>
+
+</body>
+</html>
+```
